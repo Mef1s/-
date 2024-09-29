@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+.info-text {
+    color: #555555; /* Elegancki odcień szarości */
+    padding: 20px;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Delikatny cień */
+    max-width: 1000px; /* Ograniczenie szerokości tekstu */
+    margin: 20px auto; /* Wycentrowanie tekstu na stronie */
+    margin-bottom: 20px;
+}
+
+.info-text h2 {
+    color: #333333; /* Trochę ciemniejszy odcień dla nagłówka */
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+
+#SImage {
+    width: 50%;
+    height: 500px;
+    margin-left: 25%;
+    margin-right: 25%;
+}

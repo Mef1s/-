@@ -1,6 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Header from './Header.js'; // Upewnij się, że ścieżka do Header.js jest poprawna
+import Header from './Header.js'; 
+import Home from './Home.js'; 
+import './App.css'; // Importuj styl CSS
 
 const App = () => {
   return (
@@ -8,7 +10,7 @@ const App = () => {
       <div id="wrapper">
         <Header />
         <Routes>
-          <Route path="/" element={<div>Strona główna</div>} />
+          <Route path="/" element={<Home />} />
         </Routes>
       </div>
     </Router>

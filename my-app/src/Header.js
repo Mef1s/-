@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import './Header.css'; // Importuj swój CSS
+import './Header.css'; 
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -8,7 +8,7 @@ const Header = () => {
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
   return (
-    <header>
+    <body>
       <nav>
         <button className="menu-toggle" onClick={toggleMenu}>
           ☰
@@ -54,8 +54,13 @@ const Header = () => {
           </li>
         </ul>
       </nav>
-      <div className="banner"></div> {/* Dodajemy baner */}    
-    </header>
+      <div className="banner">
+      <div class="banner-container">
+    <div class="fade-in-text">Ośrodek Rewalidacyjno - Wychowawczy w Giemlicach</div>
+    <div class="fade-in-text2">Żuławski Słonecznik</div>
+</div></div> 
+    </body>
+    
   );
 };
 
