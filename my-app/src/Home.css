@@ -1,27 +1,102 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
 
 .info-text {
-    color: #555555; /* Elegancki odcień szarości */
+    color: #555555; 
     padding: 20px;
-    border-radius: 10px;
     font-family: 'Poppins', sans-serif;
-    line-height: 1.6;
-    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Delikatny cień */
-    max-width: 1000px; /* Ograniczenie szerokości tekstu */
-    margin: 20px auto; /* Wycentrowanie tekstu na stronie */
+    line-height: 1.9;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    max-width: 70%; 
+    margin: 20px auto; 
     margin-bottom: 20px;
 }
 
-.info-text h2 {
-    color: #333333; /* Trochę ciemniejszy odcień dla nagłówka */
+.info-text h1 {
+    color: #333333; 
     font-weight: 600;
     margin-bottom: 20px;
 }
 
-
-#SImage {
-    width: 50%;
-    height: 500px;
-    margin-left: 25%;
-    margin-right: 25%;
+#container{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
+#SImage {
+    width: 70%;
+    height: auto;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.button-row {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 50px;
+}
+
+.ico-box {
+    height: 300px;
+    margin: 0px;
+    flex: 1; 
+    max-width: 18%; 
+    padding: 20px;
+    background-color: #fafafa;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+
+}
+
+.ico-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(117, 117, 117, 0.2);
+    background-color: #ffffff;
+}
+
+.link-holder .link-more {
+    display: inline-block;
+    padding: 10px;
+    color: #ffc935;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+.contact-row {
+    display: flex;
+    justify-content: space-between; 
+    width: 100%; 
+    margin: auto; 
+    margin-top: 50px;
+    padding: 5px 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff; 
+
+}
+
+.contact-box {
+    flex: 1; 
+    text-align: center;
+    padding: 10px;
+    position: relative;
+}
+
+.contact-box p {
+    color: #3f3f3f; 
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.contact-box a {
+    color: #ffae00;
+    text-decoration: none;
+}
+
+.contact-box a:hover {
+    color: #ffd209; 
+}
+
