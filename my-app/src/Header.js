@@ -67,12 +67,12 @@ const Header = () => {
             </ul>
           </li>
           <li>
-            <Link to="/ochrona-danych">Ochrona Danych Osobowych</Link>
+            <Link to="/ochrona_danych">Ochrona Danych Osobowych</Link>
             <ul>
-              <li><Link to="/files/polityka-prywatnosci">POLITYKA PRYWATNOŚCI</Link></li>
-              <li><Link to="/files/polityka-cookies">POLITYKA COOKIES</Link></li>
-              <li><Link to="#">KLAUZULE INFORMACYJNE</Link></li>
-              <li><Link to="#">REGULAMIN MONITORINGU</Link></li>
+              <li><Link to="/content/polityka-prywatnosci">POLITYKA PRYWATNOŚCI</Link></li>
+              <li><Link to="/content/polityka-cookies">POLITYKA COOKIES</Link></li>
+              <li><Link to="/content/klauzule-informacyjne">KLAUZULE INFORMACYJNE</Link></li>
+              <li><Link to="/content/regulamin-monitoringu" >REGULAMIN MONITORINGU</Link></li>
             </ul>
           </li>
         </ul>
