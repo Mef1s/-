@@ -2,8 +2,9 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './Header.js'; 
 import Home from './Home.js'; 
-import './App.css'; // Importuj styl CSS
-
+import News2425 from './news_2024_2025.js'; 
+import Osrodek from './Osrodek.js'; 
+import './App.css'; 
 const App = () => {
   return (
     <Router>
@@ -11,6 +12,8 @@ const App = () => {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/news_2024_2025" element={<News2425 />} /> 
+          <Route path="/Osrodek" element={<Osrodek />} />
         </Routes>
       </div>
     </Router>

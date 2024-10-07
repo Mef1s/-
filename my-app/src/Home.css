@@ -9,12 +9,14 @@
     max-width: 70%; 
     margin: 20px auto; 
     margin-bottom: 20px;
+
 }
 
 .info-text h1 {
     color: #333333; 
     font-weight: 600;
     margin-bottom: 20px;
+    margin-left: 6%;
 }
 
 #container{

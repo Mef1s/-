@@ -1,14 +1,27 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './Header.css'; 
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const navigate = useNavigate();
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
+  const handleScrollLinkClick = (to) => {
+    // Zmiana adresu URL do Ośrodek
+    navigate('/Osrodek');
+
+    // Przewijanie do sekcji po krótkim opóźnieniu
+    setTimeout(() => {
+      if (document.getElementById(to)) {
+        document.getElementById(to).scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 100); // Dostosuj czas, jeśli potrzebne
+  };
+
   return (
-    <body>
+    <header>
       <nav>
         <button className="menu-toggle" onClick={toggleMenu}>
           ☰
@@ -18,12 +31,28 @@ const Header = () => {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/osrodek">Ośrodek</Link>
+            <Link to="/Osrodek">Ośrodek</Link>
             <ul>
-              <li><Link to="/placowka">Placówka</Link></li>
-              <li><Link to="/placowka#dokumenty">Przyjęcie dziecka do ośrodka</Link></li>
-              <li><Link to="/placowka#wwr">Wczesne Wspomaganie Rozwoju</Link></li>
-              <li><Link to="/placowka#cele">Cele i metody pracy</Link></li>
+              <li>
+                <Link to="/Osrodek" onClick={() => handleScrollLinkClick('placowka')}>
+                  Placówka
+                </Link>
+              </li>
+              <li>
+                <Link to="/Osrodek" onClick={() => handleScrollLinkClick('dokumenty')}>
+                  Przyjęcie dziecka do ośrodka
+                </Link>
+              </li>
+              <li>
+                <Link to="/Osrodek" onClick={() => handleScrollLinkClick('wwr')}>
+                  Wczesne Wspomaganie Rozwoju
+                </Link>
+              </li>
+              <li>
+                <Link to="/Osrodek" onClick={() => handleScrollLinkClick('cele')}>
+                  Cele i metody pracy
+                </Link>
+              </li>
             </ul>
           </li>
           <li>
@@ -38,12 +67,6 @@ const Header = () => {
             </ul>
           </li>
           <li>
-            <Link to="/kadra">Kadra</Link>
-          </li>
-          <li>
-            <Link to="/contact">Kontakt</Link>
-          </li>
-          <li>
             <Link to="/ochrona-danych">Ochrona Danych Osobowych</Link>
             <ul>
               <li><Link to="/files/polityka-prywatnosci">POLITYKA PRYWATNOŚCI</Link></li>
@@ -55,12 +78,12 @@ const Header = () => {
         </ul>
       </nav>
       <div className="banner">
-      <div class="banner-container">
-    <div class="fade-in-text">Ośrodek Rewalidacyjno - Wychowawczy w Giemlicach</div>
-    <div class="fade-in-text2">Żuławski Słonecznik</div>
-</div></div> 
-    </body>
-    
+        <div className="banner-container">
+          <div className="fade-in-text">Ośrodek Rewalidacyjno - Wychowawczy w Giemlicach</div>
+          <div className="fade-in-text2">Żuławski Słonecznik</div>
+        </div>
+      </div>
+    </header>
   );
 };
 

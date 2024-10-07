@@ -5,8 +5,8 @@ import 'slick-carousel/slick/slick-theme.css';
 import './Home.css'; 
 
 
-import slide1 from './ped.jpg'; // Zmień ścieżkę
-import slide2 from './niep.jpg'; // Zmień ścieżkę
+import slide1 from './ped.jpg'; 
+import slide2 from './niep.jpg'; 
 
 const Home = () => {
   const settings = {
