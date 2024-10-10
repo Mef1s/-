@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import './Header.css'; 
-
+import './Header.css';
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const navigate = useNavigate();
@@ -69,10 +68,10 @@ const Header = () => {
           <li>
             <Link to="/ochrona_danych">Ochrona Danych Osobowych</Link>
             <ul>
-              <li><Link to="/content/polityka-prywatnosci">POLITYKA PRYWATNOŚCI</Link></li>
-              <li><Link to="/content/polityka-cookies">POLITYKA COOKIES</Link></li>
-              <li><Link to="/content/klauzule-informacyjne">KLAUZULE INFORMACYJNE</Link></li>
-              <li><Link to="/content/regulamin-monitoringu" >REGULAMIN MONITORINGU</Link></li>
+              <li><a href="/polityka-prywatnosci.pdf" target="_blank" rel="noopener noreferrer" onClick={() => setMenuOpen(false)}>POLITYKA PRYWATNOŚCI</a></li>
+              <li><a href="/polityka-cookies.pdf" target="_blank" rel="noopener noreferrer" onClick={() => setMenuOpen(false)}>POLITYKA COOKIES</a></li>
+              <li><Link to="/klauzule-informacyjne">KLAUZULE INFORMACYJNE (Brak)</Link></li>
+              <li><Link to="/regulamin-monitoringu" >REGULAMIN MONITORINGU (Brak)</Link></li>
             </ul>
           </li>
         </ul>

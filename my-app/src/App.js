@@ -1,11 +1,13 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Header from './Header.js'; 
 import Home from './Home.js'; 
 import News2425 from './news_2024_2025.js'; 
 import Osrodek from './Osrodek.js'; 
 import Aktualnosci from './aktualnosci.js'; 
 import './App.css'; 
+
+
 const App = () => {
   return (
     <Router>
