@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Slider from 'react-slick';
+import { Link, useNavigate } from 'react-router-dom';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './Home.css'; 
@@ -9,6 +10,23 @@ import slide1 from './ped.jpg';
 import slide2 from './niep.jpg'; 
 
 const Home = () => {
+    const [menuOpen, setMenuOpen] = useState(false);
+    const navigate = useNavigate();
+  
+    const toggleMenu = () => setMenuOpen(!menuOpen);
+  
+    const handleScrollLinkClick = (to) => {
+  
+      navigate('/Osrodek');
+  
+    
+      setTimeout(() => {
+        if (document.getElementById(to)) {
+          document.getElementById(to).scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100); 
+    };
+  
   const settings = {
     dots: true,
     infinite: true,
@@ -33,7 +51,9 @@ const Home = () => {
             <p>o nas</p>
         </div>
         <div class="link-holder">
-            <a class="link-more" href="placowka.html#dokumenty">DOWIEDZ SIĘ WIĘCEJ</a>
+        <Link to="/Osrodek" onClick={() => handleScrollLinkClick('placowka')}className="link-more">
+                  DOWIEDZ SIĘ WIĘCEJ
+                </Link>
         </div>
     </div>
 
@@ -47,7 +67,9 @@ const Home = () => {
             <p>Dokumenty konieczne do przyjęcia dziecka</p>
         </div>
         <div class="link-holder">
-            <a class="link-more" href="placowka.html#dokumenty">DOWIEDZ SIĘ WIĘCEJ</a>
+        <Link to="/Osrodek" onClick={() => handleScrollLinkClick('dokumenty')}className="link-more">
+        DOWIEDZ SIĘ WIĘCEJ
+        </Link>
         </div>
     </div>
 
@@ -60,7 +82,9 @@ const Home = () => {
             <p>Wczesne wspomaganie rozwoju</p>
         </div>
         <div class="link-holder">
-            <a class="link-more" href="placowka.html#dokumenty">DOWIEDZ SIĘ WIĘCEJ</a>
+        <Link to="/Osrodek" onClick={() => handleScrollLinkClick('wwr')} className="link-more">
+        DOWIEDZ SIĘ WIĘCEJ
+        </Link>
         </div>
     </div>
 
@@ -73,7 +97,9 @@ const Home = () => {
             <p>Cele i metody pracy</p>
         </div>
         <div class="link-holder">
-            <a class="link-more" href="placowka.html#dokumenty">DOWIEDZ SIĘ WIĘCEJ</a>
+        <Link to="/Osrodek" onClick={() => handleScrollLinkClick('cele')}className="link-more">
+        DOWIEDZ SIĘ WIĘCEJ
+        </Link>
         </div>
     </div>
 </div>

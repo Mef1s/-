@@ -8,15 +8,15 @@ const Header = () => {
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
   const handleScrollLinkClick = (to) => {
-    // Zmiana adresu URL do Ośrodek
+
     navigate('/Osrodek');
 
-    // Przewijanie do sekcji po krótkim opóźnieniu
+  
     setTimeout(() => {
       if (document.getElementById(to)) {
         document.getElementById(to).scrollIntoView({ behavior: 'smooth' });
       }
-    }, 100); // Dostosuj czas, jeśli potrzebne
+    }, 100); 
   };
 
   return (
