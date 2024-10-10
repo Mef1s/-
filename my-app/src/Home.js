@@ -17,7 +17,7 @@ const Home = () => {
   
     const handleScrollLinkClick = (to) => {
   
-      navigate('/Osrodek');
+      navigate('/Ośrodek');
   
     
       setTimeout(() => {
@@ -51,7 +51,7 @@ const Home = () => {
             <p>o nas</p>
         </div>
         <div class="link-holder">
-        <Link to="/Osrodek" onClick={() => handleScrollLinkClick('placowka')}className="link-more">
+        <Link to="/Ośrodek" onClick={() => handleScrollLinkClick('placowka')}className="link-more">
                   DOWIEDZ SIĘ WIĘCEJ
                 </Link>
         </div>
@@ -67,7 +67,7 @@ const Home = () => {
             <p>Dokumenty konieczne do przyjęcia dziecka</p>
         </div>
         <div class="link-holder">
-        <Link to="/Osrodek" onClick={() => handleScrollLinkClick('dokumenty')}className="link-more">
+        <Link to="/Ośrodek" onClick={() => handleScrollLinkClick('dokumenty')}className="link-more">
         DOWIEDZ SIĘ WIĘCEJ
         </Link>
         </div>
@@ -82,7 +82,7 @@ const Home = () => {
             <p>Wczesne wspomaganie rozwoju</p>
         </div>
         <div class="link-holder">
-        <Link to="/Osrodek" onClick={() => handleScrollLinkClick('wwr')} className="link-more">
+        <Link to="/Ośrodek" onClick={() => handleScrollLinkClick('wwr')} className="link-more">
         DOWIEDZ SIĘ WIĘCEJ
         </Link>
         </div>
@@ -97,7 +97,7 @@ const Home = () => {
             <p>Cele i metody pracy</p>
         </div>
         <div class="link-holder">
-        <Link to="/Osrodek" onClick={() => handleScrollLinkClick('cele')}className="link-more">
+        <Link to="/Ośrodek" onClick={() => handleScrollLinkClick('cele')}className="link-more">
         DOWIEDZ SIĘ WIĘCEJ
         </Link>
         </div>

@@ -9,7 +9,7 @@ const Header = () => {
 
   const handleScrollLinkClick = (to) => {
 
-    navigate('/Osrodek');
+    navigate('/Ośrodek');
 
   
     setTimeout(() => {
@@ -30,32 +30,32 @@ const Header = () => {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/Osrodek">Ośrodek</Link>
+            <Link to="/Ośrodek">Ośrodek</Link>
             <ul>
               <li>
-                <Link to="/Osrodek" onClick={() => handleScrollLinkClick('placowka')}>
+                <Link to="/Ośrodek" onClick={() => handleScrollLinkClick('placowka')}>
                   Placówka
                 </Link>
               </li>
               <li>
-                <Link to="/Osrodek" onClick={() => handleScrollLinkClick('dokumenty')}>
+                <Link to="/Ośrodek" onClick={() => handleScrollLinkClick('dokumenty')}>
                   Przyjęcie dziecka do ośrodka
                 </Link>
               </li>
               <li>
-                <Link to="/Osrodek" onClick={() => handleScrollLinkClick('wwr')}>
+                <Link to="/Ośrodek" onClick={() => handleScrollLinkClick('wwr')}>
                   Wczesne Wspomaganie Rozwoju
                 </Link>
               </li>
               <li>
-                <Link to="/Osrodek" onClick={() => handleScrollLinkClick('cele')}>
+                <Link to="/Ośrodek" onClick={() => handleScrollLinkClick('cele')}>
                   Cele i metody pracy
                 </Link>
               </li>
             </ul>
           </li>
           <li>
-            <Link to="/aktualnosci">Aktualności</Link>
+            <Link to="/Aktualności">Aktualności</Link>
             <ul>
               <li><Link to="/news_2024_2025">Rok Szkolny 2024/2025</Link></li>
               <li><Link to="/news_2023_2024">Rok Szkolny 2023/2024</Link></li>
@@ -66,7 +66,7 @@ const Header = () => {
             </ul>
           </li>
           <li>
-            <Link to="/ochrona_danych">Ochrona Danych Osobowych</Link>
+            <Link to="/">Ochrona Danych Osobowych</Link>
             <ul>
               <li><a href="/polityka-prywatnosci.pdf" target="_blank" rel="noopener noreferrer" onClick={() => setMenuOpen(false)}>POLITYKA PRYWATNOŚCI</a></li>
               <li><a href="/polityka-cookies.pdf" target="_blank" rel="noopener noreferrer" onClick={() => setMenuOpen(false)}>POLITYKA COOKIES</a></li>
