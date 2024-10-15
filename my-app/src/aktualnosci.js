@@ -19,7 +19,10 @@ import zm7 from './img/zm7.jpg';
 import zm8 from './img/zm8.jpg';
 import zm9 from './img/zm9.jpg';
 import zm10 from './img/zm10.jpg';
-
+import rozp1 from './img/rozp1.jpg';
+import rozp2 from './img/rozp2.jpg';
+import rozp3 from './img/rozp3.jpeg';
+import rozp4 from './img/rozp4.jpeg';
 
 const News = () => {
   const posts = [
@@ -41,7 +44,7 @@ const News = () => {
     {
         title: "Rozpoczęcie roku szkolnego 2024/2025",
         content: "2 września 2024 roku w naszym Ośrodku Rewalidacyjno-Wychowawczym „Żuławski Słonecznik” odbyła się uroczysta inauguracja nowego roku szkolnego 2024/2025. Był to dzień pełen emocji, podczas którego wychowankowie pożegnali wakacyjny czas i z entuzjazmem wkroczyli w nowy etap nauki. Uroczystość rozpoczęła się przemówieniem Pani Dyrektor Janiny Gruchockiej, która z radością powitała wszystkich obecnych – szczególnie tych, którzy po raz pierwszy przekroczyli progi naszej placówki. Po zakończeniu oficjalnej części, uczniowie udali się na pierwsze spotkania z wychowawcami, pełni energii i gotowi na nowe wyzwania. Życzymy wszystkim wychowankom, nauczycielom oraz rodzicom wielu sukcesów i radości w nadchodzącym roku szkolnym.",
-        images: [mo1, mo2, mo3],
+        images: [rozp1, rozp2, rozp3, rozp4],
       },
   ];
 

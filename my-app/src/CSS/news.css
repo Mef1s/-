@@ -79,3 +79,47 @@ p {
     margin-bottom: 20px; 
     margin-left: 5%;
 }
+
+
+@media (max-width: 768px) {
+    .post {
+        width: 90%; 
+        margin: 10px auto; 
+        padding: 15px; 
+    }
+
+    .news-slider {
+        height: 400px;
+    }
+
+    .slider-arrow {
+        width: 40px; 
+        padding: 8px; 
+    }
+
+    h2 {
+        margin-left: 0; 
+        font-size: 24px;
+    }
+
+    p {
+        margin-left: 0; 
+        padding: 5px;
+        font-size: 14px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .slider-arrow {
+        width: 35px; 
+        padding: 5px; 
+    }
+
+    h2 {
+        font-size: 20px; 
+    }
+
+    p {
+        font-size: 12px; 
+    }
+}

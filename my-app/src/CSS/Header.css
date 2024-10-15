@@ -1,4 +1,6 @@
-
+header {
+    max-width: 100%;
+}
 
 .banner {
     background-image: url('../img/giemlice_1920_1269_2.jpg');
@@ -13,6 +15,7 @@
     align-items: center;
     justify-content: center;
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
 
 .fade-in-text {
@@ -34,6 +37,7 @@
         opacity: 1;
     }
 }
+
 .fade-in-text2 {
     opacity: 0;
     animation: fadeIn 2.5s ease-in forwards;
@@ -55,7 +59,6 @@ nav {
     padding: 10px 20px;
     position: relative;
 }
-
 
 .menu-toggle {
     display: none;
@@ -163,7 +166,7 @@ nav ul li ul li a:hover {
 
     .menu-toggle {
         display: block;
-        background-color: #fff;
+        background-color: #00000000;
         border: none;
         padding: 10px;
         font-size: 16px;
@@ -178,4 +181,17 @@ nav ul li ul li a:hover {
         outline: none;
     }
 
+    .banner {
+        height: 500px;
+    }
+
+    .fade-in-text {
+        font-size: 20px; 
+        margin-top: -100px; 
+    }
+
+    .fade-in-text2 {
+        font-size: 74px; 
+        margin-top: 10px; 
+    }
 }

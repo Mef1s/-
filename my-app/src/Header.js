@@ -21,10 +21,8 @@ const Header = () => {
 
   return (
     <header>
+      
       <nav>
-        <button className="menu-toggle" onClick={toggleMenu}>
-          ☰
-        </button>
         <ul className={menuOpen ? 'show' : ''}>
           <li>
             <Link to="/">Home</Link>
@@ -76,6 +74,9 @@ const Header = () => {
           </li>
         </ul>
       </nav>
+      <button className="menu-toggle" onClick={toggleMenu}>
+          ☰
+        </button>
       <div className="banner">
         <div className="banner-container">
           <div className="fade-in-text">Ośrodek Rewalidacyjno - Wychowawczy w Giemlicach</div>

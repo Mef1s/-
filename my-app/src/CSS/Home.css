@@ -9,7 +9,6 @@
     max-width: 70%; 
     margin: 20px auto; 
     margin-bottom: 20px;
-
 }
 
 .info-text h1 {
@@ -19,17 +18,19 @@
     margin-left: 6%;
 }
 
-#container{
+#container {
     width: 90%;
     margin-left: 5%;
     margin-right: 5%;
 }
+
 #SImage {
     width: 70%;
     height: auto;
     margin-left: 15%;
     margin-right: 15%;
 }
+
 .button-row {
     display: flex;
     justify-content: space-between;
@@ -49,7 +50,6 @@
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
-
 }
 
 .ico-box:hover {
@@ -66,7 +66,6 @@
     text-decoration: none;
     transition: background-color 0.3s;
 }
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
 
 .contact-row {
     display: flex;
@@ -77,7 +76,6 @@
     padding: 5px 0;
     font-family: 'Poppins', sans-serif;
     background-color: #ffffff; 
-
 }
 
 .contact-box {
@@ -102,3 +100,43 @@
     color: #ffd209; 
 }
 
+
+@media (max-width: 1200px) {
+    .info-text {
+        margin-top: 35px;
+        max-width: 90%; 
+        padding: 15px; 
+        font-size: 15px;
+    }
+
+    .info-text h1 {
+        margin-left: 0; 
+    }
+
+    #SImage {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .button-row {
+        flex-direction: column;
+        width: 70%; 
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    .ico-box {
+        max-width: 100%; 
+        height: auto; 
+        margin-bottom: 20px;
+    }
+
+    .contact-row {
+        flex-direction: column; 
+    }
+
+    .contact-box {
+        margin-bottom: -80px; 
+    }
+}
