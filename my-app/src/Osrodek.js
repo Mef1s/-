@@ -1,5 +1,5 @@
 import React from 'react';
-import './Osrodek.css'; // Zakładając, że masz osobny plik CSS dla tego komponentu
+import './CSS/Osrodek.css';
 
 const Osrodek = () => {
   return (

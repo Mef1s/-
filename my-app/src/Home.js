@@ -3,11 +3,11 @@ import Slider from 'react-slick';
 import { Link, useNavigate } from 'react-router-dom';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import './Home.css'; 
+import './CSS/Home.css'; 
 
 
-import slide1 from './ped.jpg'; 
-import slide2 from './niep.jpg'; 
+import slide1 from './img/ped.jpg'; 
+import slide2 from './img/niep.jpg'; 
 
 const Home = () => {
     const [menuOpen, setMenuOpen] = useState(false);

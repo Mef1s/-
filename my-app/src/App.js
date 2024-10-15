@@ -5,7 +5,7 @@ import Home from './Home.js';
 import News2425 from './news_2024_2025.js'; 
 import Ośrodek from './Osrodek.js'; 
 import Aktualności from './aktualnosci.js'; 
-import './App.css'; 
+import './CSS/App.css'; 
 
 
 const App = () => {
